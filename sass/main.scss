@@ -1,79 +1,8 @@
-@import "./utils/normalize";
+@import "./base/normalize";
+@import "./base/local-fonts";
 @import "./utils/variables";
-body {
-  background-color: $main-white;
-  font-family: $primary-font-family;
-  font-style: normal;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: $secondary-text-colour;
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-
-ul {
-  padding-inline-start: 0px;
-}
-/*common*/
-.list {
-  list-style: none;
-  padding-inline-start: 0px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-
-.visually-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-}
-
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.logo {
-  color: $secondary-text-colour;
-  text-decoration: none;
-  font-family: $secondary-font-family;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-
-  display: block;
-  margin-right: 93px;
-  padding-top: 24px;
-  padding-bottom: 25px;
-}
-
-.part-web {
-  color: $accent;
-}
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-.section__title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.2;
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  margin-bottom: 50px;
-}
-
+@import "./components/common";
+@import "./components/logo";
 /*Header*/
 .header {
   background-color: $main-white;
@@ -95,7 +24,7 @@ ul {
   font-family: $secondary-font-family;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.2;
+  line-height: $primary-line-height;
   letter-spacing: 0.03em;
 
   display: block;
@@ -299,7 +228,7 @@ ul {
   min-width: 528px;
   min-height: 581px;
 
-  background: #ffffff;
+  background: $main-white;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -592,7 +521,7 @@ ul {
   font-style: inherit;
   font-weight: 500;
   font-size: $secondary-text-size;
-  line-height: 1.2;
+  line-height: $primary-line-height;
   text-align: center;
   letter-spacing: 0.03em;
 
@@ -604,7 +533,7 @@ ul {
   font-family: inherit;
   font-style: inherit;
   font-size: $secondary-text-size;
-  line-height: 1.2;
+  line-height: $primary-line-height;
   text-align: center;
   letter-spacing: 0.03em;
   font-weight: $primary-text-weight;
@@ -623,7 +552,7 @@ ul {
   border: none;
   width: 44px;
   height: 44px;
-  fill: #afb1b8;
+  fill: $primary-icon-colour;
 
   background-position: center;
   background-color: $main-white;
@@ -652,10 +581,10 @@ ul {
 
 .customers__icon {
   padding: 0;
-  border: 1px solid #afb1b8;
+  border: 1px solid $primary-icon-colour;
   width: 170px;
   height: 90px;
-  fill: #afb1b8;
+  fill: $primary-icon-colour;
 
   background-position: center;
   background-color: $main-white;
@@ -925,20 +854,20 @@ ul {
 
   font-family: inherit;
   font-weight: $primary-text-weight;
-  font-size: 16px;
-  line-height: 1.25;
+  font-size: $secondary-text-size;
+  line-height: $primary-line-height;
   letter-spacing: 0.03em;
 
-  color: rgba(255, 255, 255, 0.6);
+  color: $footer-link-colour;
 }
 .subscribe__input::placeholder {
   font-family: inherit;
   font-weight: $primary-text-weight;
-  font-size: 16px;
-  line-height: 1.25;
+  font-size: $secondary-text-size;
+  line-height: $primary-line-height;
   letter-spacing: 0.03em;
 
-  color: rgba(255, 255, 255, 0.6);
+  color: $footer-link-colour;
 }
 .subscribe__button {
   background-color: $accent;

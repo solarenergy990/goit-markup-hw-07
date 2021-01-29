@@ -335,6 +335,7 @@ summary {
   /* Legacy iOS */
 }
 
+/*common adjustment and defaults discard*/
 body {
   background-color: #ffffff;
   font-family: Roboto, sans-serif;
@@ -357,7 +358,6 @@ ul {
           padding-inline-start: 0px;
 }
 
-/*common*/
 .list {
   list-style: none;
   -webkit-padding-start: 0px;
@@ -382,6 +382,20 @@ ul {
   margin-right: auto;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+
 .logo {
   color: #212121;
   text-decoration: none;
@@ -398,20 +412,6 @@ ul {
 
 .part-web {
   color: #2196f3;
-}
-
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.section__title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.2;
-  text-align: center;
-  letter-spacing: 0.03em;
-  margin-bottom: 50px;
 }
 
 /*Header*/
@@ -1431,7 +1431,7 @@ ul {
   font-family: inherit;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.25;
+  line-height: 1.2;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
@@ -1440,7 +1440,7 @@ ul {
   font-family: inherit;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.25;
+  line-height: 1.2;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
@@ -1449,7 +1449,7 @@ ul {
   font-family: inherit;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.25;
+  line-height: 1.2;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
@@ -1458,7 +1458,7 @@ ul {
   font-family: inherit;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.25;
+  line-height: 1.2;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
@@ -1467,7 +1467,7 @@ ul {
   font-family: inherit;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.25;
+  line-height: 1.2;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
